@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "migration-example-executor",
+    "name": "migration-example",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "2wcq8y9cj8"
+  }
+}

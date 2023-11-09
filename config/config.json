@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Admin!09",
+    "database": "10Management",
+    "host": "sda-db.csypfynk8iar.eu-west-1.rds.amazonaws.com",
+    "port": "1433",
+    "dialect": "mssql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  }
+}

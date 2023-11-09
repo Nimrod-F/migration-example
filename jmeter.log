@@ -1,0 +1,118 @@
+2023-11-07 22:34:47,575 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-11-07 22:34:47,586 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.2/libexec/bin/user.properties
+2023-11-07 22:34:47,586 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.2/libexec/bin/system.properties
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: Version 5.6.2
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: java.version=17.0.9
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: os.name=Mac OS X
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: os.arch=aarch64
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: os.version=13.5
+2023-11-07 22:34:47,588 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-11-07 22:34:47,589 INFO o.a.j.JMeter: java.awt.headless=null
+2023-11-07 22:34:47,589 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-11-07 22:34:47,589 INFO o.a.j.JMeter: Available Processors =12
+2023-11-07 22:34:47,593 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-11-07 22:34:47,593 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-11-07 22:34:47,593 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.2/libexec
+2023-11-07 22:34:47,593 INFO o.a.j.JMeter: user.dir  =/Users/foldvn/Downloads/migration-example
+2023-11-07 22:34:47,593 INFO o.a.j.JMeter: PWD       =/Users/foldvn/Downloads/migration-example
+2023-11-07 22:34:47,594 INFO o.a.j.JMeter: IP: 192.168.1.112 Name: MSGMAC-P34Q4R2V9F FullName: 192.168.1.112
+2023-11-07 22:34:47,598 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-11-07 22:34:47,969 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2023-11-07 22:34:50,904 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.2/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2023-11-07 22:34:50,961 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.2/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2023-11-07 22:34:50,997 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-870571d989205e368e7f9c8410d27b48-gui
+2023-11-07 22:34:52,099 WARN o.j.r.PluginManagerMenuItem: Failed to load plugin updates info
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alert.createSSLException(Alert.java:131) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:378) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:321) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:316) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175) ~[?:?]
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480) ~[?:?]
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458) ~[?:?]
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:201) ~[?:?]
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:172) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[?:?]
+	at org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:499) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:494) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getJSON(JARSourceHTTP.java:152) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepositories(JARSourceHTTP.java:276) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepo(JARSourceHTTP.java:304) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:71) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuItem$1.run(PluginManagerMenuItem.java:38) [jmeter-plugins-manager-1.9.jar:?]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341) ~[?:?]
+	... 28 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148) ~[?:?]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129) ~[?:?]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297) ~[?:?]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132) ~[?:?]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341) ~[?:?]
+	... 28 more
+2023-11-07 22:35:15,228 INFO o.a.j.s.FileServer: Default base='/Users/foldvn/Downloads/migration-example'
+2023-11-07 22:35:54,199 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-11-07 22:35:54,200 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 22:35:54,201 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 22:35:54,201 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-11-07 22:35:54,202 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-11-07 22:35:54,236 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.2/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2023-11-07 22:35:54,239 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-11-07 22:35:54,255 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2023-11-07 22:35:54,255 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-11-07 22:35:54,256 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-11-07 22:36:13,451 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 22:36:13,452 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 22:36:13,452 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 22:36:13,452 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 22:36:13,452 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-11-07 22:36:13,452 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-11-07 22:38:13,855 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-11-07 22:38:13,856 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 22:38:13,856 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-11-07 22:38:13,878 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2023-11-07 22:38:13,878 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-11-07 22:38:13,878 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-11-07 22:38:37,656 INFO o.a.j.s.FileServer: Set new base='/Users/foldvn/Downloads'
+2023-11-07 22:38:37,744 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-11-07 22:38:37,752 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-11-07 22:38:37,753 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-11-07 22:38:37,760 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-11-07 22:38:37,760 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 22:38:37,760 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-11-07 22:38:37,774 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2023-11-07 22:38:37,775 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-11-07 22:38:37,775 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-11-07 22:38:42,858 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-11-07 22:38:42,858 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 22:38:42,859 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-11-07 22:38:42,878 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2023-11-07 22:38:42,878 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-11-07 22:38:42,878 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
