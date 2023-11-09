@@ -34,6 +34,27 @@ module.exports = {
             .catch(error => res.status(400).send(error));
     },
 
+    /*
+        CREATE PROCEDURE UpdateDepartmentName
+            @DepartmentID INT,
+            @NewName NVARCHAR(255)
+        AS
+        BEGIN
+            SET NOCOUNT ON;
+
+            IF EXISTS (SELECT 1 FROM Department WHERE ID = @DepartmentID)
+            BEGIN
+                UPDATE Department
+                SET Name = @NewName
+                WHERE ID = @DepartmentID;
+            END
+            ELSE
+            BEGIN
+                RAISEERROR('Department with ID %d does not exist.', 16, 1, @DepartmentID);
+            END
+        END;
+    */
+
     update(req, res) {
         return Person.findByPk(req.params.personId)
             .then(person => {
